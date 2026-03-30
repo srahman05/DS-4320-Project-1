@@ -34,13 +34,14 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 
 ## Problem Definition
 ### General and Specific Problem
-* **General Problem:** "Make all materials easy to find and access"
-* **Specific Problem:** Demonstrate key features of GFM that enables a more readable document.
+* **General Problem:** The general problem is that air pollution causes serious health risks and cities often do not have enough warning before dangerous air quality conditions occur.
+* **Specific Problem:** The refined specific problem is: can we predict when a city will experience a pollution spike (a day where AQI or pollutant concentration exceeds a harmful threshold) based on recent air quality readings and weather conditions? Without reliable early warning, city officials cannot take action in time to protect residents.
 ### Rationale
-The core issue is that no one has been trained in the use of GFM, rather people pick up bits and pieces here and there. In order to use the tool effectively the user does not need to focus on "easy to find" but rather how the tool itself works. The beauty of the Markdown ecosystem is that it takes care of the ease for you. You just have to know which tool to select.
+The general problem of air pollution is very broad and includes policy, industrial regulation, and long-term climate trends. I narrowed the focus to predicting short-term pollution spikes because that is a problem where a data-driven model can provide direct value. Using past pollutant readings and weather data, a model can flag upcoming bad air days before they happen. This refinement makes the project realistic in scope and directly useful to city planners who need to issue warnings on short notice.
 ### Motivation
+Poor air quality is linked to respiratory illness, cardiovascular disease, and premature death. Cities that can predict bad air days in advance can take steps to protect their residents, such as issuing health advisories, restricting vehicle traffic, or alerting sensitive populations like the elderly and children. A predictive model could give city officials a one to two day window to act, which could reduce health impacts and emergency response costs.
 ### Press Release Headline and Link
-[**Data Science Project uses GFM to meet spec**](https://github.com/UVADS/DS-4320/tree/main)
+[**A New Prediction Tool Could Give Cities Early Warning Before Dangerous Air Quality Days Occur**](https://github.com/UVADS/DS-4320/tree/main)
 
 ## Domain Exposition
 
