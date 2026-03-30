@@ -12,7 +12,7 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 ### NetID - yeh5kr
 ### DOI - [https://doi.org/10.1000/182](https://doi.org/10.1000/182)
 ### Press Release
-[**Data Science Project uses GFM to meet spec**](https://github.com/UVADS/DS-4320/tree/main)
+[Link to Press Release]([https://github.com/UVADS/DS-4320/tree/main](https://github.com/srahman05/DS-4320-Project-1/blob/97d4b235dc332a91e68d2045ded00433983f5ef7/press-release.md))
 ### Data - [link to data](https://doi.org/10.1000/182)
 ### Pipeline - [analysis code](https://doi.org/10.1000/182)
 ### License - [MIT](LICENSE.md)
