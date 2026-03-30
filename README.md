@@ -8,7 +8,7 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 
 ---
 
-### Name - Sharini Rahman
+### Name - Sharini Rahman 
 ### NetID - yeh5kr
 ### DOI - [https://doi.org/10.1000/182](https://doi.org/10.1000/182)
 ### Press Release
