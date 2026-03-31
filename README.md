@@ -43,7 +43,6 @@ Poor air quality is linked to respiratory illness, cardiovascular disease, and p
 [**A New Prediction Tool Could Give Cities Early Warning Before Dangerous Air Quality Days Occur**](https://github.com/srahman05/DS-4320-Project-1/blob/97d4b235dc332a91e68d2045ded00433983f5ef7/press-release.md)
 
 ## Domain Exposition
-
 ### Terminology
 | Term | Definition | Why It Matters |
 |---|---|---|
@@ -69,6 +68,19 @@ This project lives in the domain of environmental data science and urban public 
 | Machine Learning for Air Quality Prediction and Data Analysis | Reviews over 70 ML-based studies on air quality monitoring and prediction, comparing models like Random Forest, XGBoost, and LSTM for forecasting pollution levels. | [Link](https://myuva-my.sharepoint.com/:b:/g/personal/yeh5kr_virginia_edu/IQDjPzI_8EjjQZLYLIeCaU5mAXcgfND1tcmljPxdF9TPeRI?e=mAWTR7) |
 | State Escalates Air Quality Alert in Central Virginia to Very Unhealthy | A local news article about Albemarle County receiving a very unhealthy air quality rating in 2023, showing how real governments issue AQI alerts and who is most at risk. | [Link](https://myuva-my.sharepoint.com/:b:/g/personal/yeh5kr_virginia_edu/IQDhWzaqZc5cSrTcFPJyv-MrAcQPpIlsb1oO_DnPNSe2g2k?e=SQNJwg) |
 | Air Quality Index (AQI) Basics | Explains how the EPA's AQI works, what the six color-coded categories mean, and which five major pollutants are tracked to protect public health. | [Link](https://myuva-my.sharepoint.com/:b:/g/personal/yeh5kr_virginia_edu/IQC5hTfttyCmQL1AueZc7R3pAUbnECtvTPsUx2e0SZv1iHw?e=2kYeaQ) |
+
+## Data Creation
+### Acquisition Process
+All data used in this project came from free, publicly available government websites and was downloaded manually as CSV files.
+The first three files came from the EPA AirData website, which publishes pre-built daily summary files that anyone can download by pollutant and year. The Daily AQI by County file was downloaded for 2020 through 2025 and provides one composite air quality score per county per day. This will serve as the target variable for the prediction model. The Daily NO2 and Daily Ozone summary files were also downloaded for the same time period and provide pollutant-specific readings collected from EPA monitoring stations across the country. All three of these files cover US counties nationwide.
+The fourth file came from the EPA National Emissions Inventory, specifically the 2020 onroad mobile emissions summary. This file was downloaded as a ZIP containing CSVs directly from the EPA air emissions inventories page. It estimates the amount of pollutants released by vehicles on public roads, broken down by county. This includes emissions from passenger cars, trucks, motorcycles, and buses, as well as less obvious sources like idling trucks during rest stops.
+
+
+
+
+
+
+
 
 ### Code Highlighting
 
