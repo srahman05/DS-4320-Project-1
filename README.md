@@ -80,7 +80,7 @@ The fourth file came from the EPA National Emissions Inventory, specifically the
 
 | File | Description | Link |
 |---|---|---|
-| `data-processing.ipynb` | Reads all raw CSV files, merges by year or region, and saves each table as a parquet file | [data-processing.ipynb](pipeline/pipeline.ipynb) |
+| `data-processing.ipynb` | Reads all raw CSV files, merges by year or region, and saves each table as a parquet file | [data-processing.ipynb](https://github.com/srahman05/DS-4320-Project-1/blob/775560640735fd63bafdfbbd344ab84e2cc885ec/data-processing.ipynb) |
 
 
 
