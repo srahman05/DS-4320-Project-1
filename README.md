@@ -11,7 +11,7 @@ This README contains the materials for DS 4320 Project 1, which focuses on predi
 | Name | Sharini Rahman |
 | NetID | yeh5kr |
 | DOI | [Link](https://doi.org/10.5281/zenodo.19343154) |
-| Press Release | [Link to Press Release](https://github.com/srahman05/DS-4320-Project-1/blob/4c904b47df53f4259f2b75460241f5aa520fb8b7/press-release.md) |
+| Press Release | [Link to Press Release](https://github.com/srahman05/DS-4320-Project-1/blob/eb7e659be1f3539538d978a8510499ee40b31b37/press-release.md) |
 | Data | [Link to Data](https://myuva-my.sharepoint.com/:f:/g/personal/yeh5kr_virginia_edu/IgBRa3z0DhIIT7WJeHvw6uEUAaD6VxoHnCiSf18yM_InRrI?e=GZw09j) |
 | Pipeline | [Link to Pipeline Analysis](https://github.com/srahman05/DS-4320-Project-1/tree/ac233e1fecce92b530c35703fe316742ae2f81c8/pipeline-analysis) |
 | License | [MIT](https://github.com/srahman05/DS-4320-Project-1/blob/cc5a4a19480b9613e8bbe429a9660bba0b6087cd/LICENSE) |
@@ -30,7 +30,7 @@ The general problem of air pollution is very broad and includes policy, industri
 ### Motivation
 Poor air quality is linked to respiratory illness, cardiovascular disease, and premature death. Cities that can predict bad air days in advance can take steps to protect their residents, such as issuing health advisories, restricting vehicle traffic, or alerting sensitive populations like the elderly and children. A predictive model could give city officials a one to two day window to act, which could reduce health impacts and emergency response costs.
 ### Press Release Headline and Link
-[**A New Prediction Tool Could Give Counties Early Warning Before Dangerous Air Quality Days Occur**](https://github.com/srahman05/DS-4320-Project-1/blob/c004d9e8b59b6fae5ae6a42e4eef27ec0e7c3cb3/press-release.md)
+[**A New Prediction Tool Could Give Counties Early Warning Before Dangerous Air Quality Days Occur**](https://github.com/srahman05/DS-4320-Project-1/blob/eb7e659be1f3539538d978a8510499ee40b31b37/press-release.md)
 
 ## Domain Exposition
 ### Terminology
