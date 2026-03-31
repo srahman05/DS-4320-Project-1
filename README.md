@@ -14,7 +14,7 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 ### Press Release - [Link to Press Release](https://github.com/srahman05/DS-4320-Project-1/blob/97d4b235dc332a91e68d2045ded00433983f5ef7/press-release.md)
 ### Data - [Link to Data](https://doi.org/10.1000/182)
 ### Pipeline - [Analysis Code](https://doi.org/10.1000/182)
-### License - [MIT](https://github.com/srahman05/DS-4320-Project-1/blob/d79ae80f4852ce2fbf05fade04fc779ce8f4bb0c/LICENSE)
+### License - [MIT](https://github.com/srahman05/DS-4320-Project-1/blob/cc5a4a19480b9613e8bbe429a9660bba0b6087cd/LICENSE)
 ---
 | Spec | Value |
 |---|---|
