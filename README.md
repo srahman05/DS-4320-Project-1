@@ -70,7 +70,7 @@ My data came from direct downloads, not custom code. I merged the files for each
 
 | File | Description | Link |
 |---|---|---|
-| `data-processing.ipynb` | Reads all raw CSV files, merges by year or region, and saves each table as a parquet file | [data-processing.ipynb](https://github.com/srahman05/DS-4320-Project-1/blob/99f5164e5597ac05e50e803e95ebe03d74d7f661/data-processing.ipynb) |
+| `data-processing.ipynb` | Reads all raw CSV files, merges by year or region, saves each table as a parquet file, and creates a DuckDB database to prove dataset works as a proper relational database | [data-processing.ipynb](https://github.com/srahman05/DS-4320-Project-1/blob/6f06d2722f4f0231ebf3cefc92b4585b81caf804/data-processing.ipynb) |
 
 ### Bias Identification
 A couple sources of bias exist in this dataset. The EPA monitoring stations are not evenly distributed across the country, meaning rural and lower-income counties are often underrepresented or completely missing. This means the model may perform better for well-monitored urban areas than for counties with fewer or no sensors. The onroad emissions data only comes from 2020, so it does not capture changes in vehicle traffic or emissions over time, such as the drop in traffic during the COVID-19 pandemic or the increase in electric vehicles. Finally, the AQI data files (AQI, NO2, ozone) only reflects counties where monitors exist, so counties with no monitoring data are completely excluded from the dataset.
