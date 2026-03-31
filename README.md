@@ -170,6 +170,19 @@ Onroad Emissions By Region and County
 | data set | String | Name of the dataset this record belongs to | 2020NEI |
 
 ### Uncertainty Data Dictionary
+| Dataset | Feature                   | Uncertainty (Quantified)                                                         |
+| ------- | ------------------------- | -------------------------------------------------------------------------------- |
+| AQI     | AQI                       | Mean 42.6, std 23.9, most values 31 to 52, extreme max 8368 shows large outliers |
+| AQI     | Number of Sites Reporting | Mean 2.0, std 2.4, most values 1 to 2, max 34 shows uneven coverage              |
+| NO2     | Arithmetic Mean           | Mean 7.6, std 6.7, range -4.6 to 80.6 shows high spread and some negative values |
+| NO2     | 1st Max Value             | Mean 16.1, std 12.0, range -3.9 to 315.3 shows large spikes                      |
+| NO2     | AQI                       | Mean 14.9, std 11.3, most values 6 to 22, max 141 indicates variability          |
+| Ozone   | Arithmetic Mean           | Mean 0.0327, std 0.0109, tight range but small negative values present           |
+| Ozone   | 1st Max Value             | Mean 0.0414, std 0.0121, mostly stable with max 0.277 showing spikes             |
+| Ozone   | AQI                       | Mean 40.4, std 17.2, most values 31 to 45, max 291 shows higher variability      |
+| Onroad  | Total Emissions           | Mean 509.6, std 20984.2, very large range up to 16,736,800 shows extreme skew    |
+| Onroad  | FIPS State Code           | Mean 31.5, std 16.5, range 1 to 78 reflects categories not true uncertainty      |
+
 
 
 
