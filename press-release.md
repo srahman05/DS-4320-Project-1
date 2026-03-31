@@ -1,4 +1,4 @@
-# A New Prediction Tool Could Give Cities Early Warning Before Dangerous Air Quality Days Occur
+# A New Prediction Tool Could Give Counties Early Warning Before Dangerous Air Quality Days Occur
 
 ## Hook
 Every year, millions of Americans breathe unsafe air with little to no warning. By the time a pollution spike is detected, it is often too late for local governments to act. This project gives state and county officials a head start so they can protect their communities before dangerous air quality days arrive.
