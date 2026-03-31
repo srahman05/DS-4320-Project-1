@@ -91,6 +91,85 @@ To account for monitoring gaps, the percentage of US counties missing from each 
 ### Rationale for Critical Decisions
 The onroad emissions data is limited to 2020 because the EPA only publishes the National Emissions Inventory every three years and the 2023 files will not be released until May 2026. Since no other free government source provides county-level vehicle emissions annually, the 2020 file is used as a consistent baseline across all years. This is a known limitation and should be considered when interpreting model results, particularly for years like 2022 and 2023 where traffic patterns had largely returned to pre-pandemic levels. Five years of AQI, NO2, and ozone data were included rather than a shorter window because air quality varies considerably by season, and a multi-year dataset gives the model enough examples of each season to learn reliable patterns. The NO2 and ozone readings were aggregated to the county level rather than kept at the individual monitor level because some monitors have missing days or data quality issues, and county-level averages produce a more stable and consistent dataset that aligns with the other three tables.
 
+## Metadata
+### Schema
+
+### Data Table
+| Table Name | Description | Link |
+|---|---|---|
+| daily_aqi | Daily composite AQI score per county from 2020 to 2025, serves as the target variable | [Link](https://myuva-my.sharepoint.com/:u:/g/personal/yeh5kr_virginia_edu/IQA4UNgswtb0RLqjJ40GJKQ3AQXJ6uVvf669oi5DqCXKIE0?e=Fx1aqO) |
+| daily_no2 | Daily NO2 concentration readings from EPA monitoring stations, 2020 to 2025 | [Link](https://myuva-my.sharepoint.com/:u:/g/personal/yeh5kr_virginia_edu/IQCx2Rvd4bbFSKYdrkYykwSOAc-VO-UNLMOeyryQNjWURkc?e=8NijW6) |
+| daily_ozone | Daily ozone concentration readings from EPA monitoring stations, 2020 to 2025 | [Link](https://myuva-my.sharepoint.com/:u:/g/personal/yeh5kr_virginia_edu/IQA_pSYmU5jKR5fdhfclsNGSAaD4UKPT-oUGlW0i5nMMx4E?e=KQT0R3) |
+| onroad_emission | County-level vehicle emissions estimates for 2020 from the EPA National Emissions Inventory | [Link](https://myuva-my.sharepoint.com/:u:/g/personal/yeh5kr_virginia_edu/IQC8Zd4exCFgToK7hCTLaS84ATEmcybPS4DASdESKxGVhC4?e=s9QNIr) |
+
+### Data Dictionary
+Daily AQI by County
+| Name | Data Type | Description | Example |
+|---|---|---|---|
+| State Name | String | Name of the state | Alabama |
+| County Name | String | Name of the county | Baldwin |
+| State Code | Integer | Numeric FIPS code for the state | 1 |
+| County Code | Integer | Numeric FIPS code for the county | 3 |
+| Date | Date | Date of the AQI reading | 2020-01-01 |
+| AQI | Integer | Composite Air Quality Index score for that day | 56 |
+| Category | String | AQI category label | Moderate |
+| Defining Parameter | String | Pollutant that drove the AQI score that day | PM2.5 |
+| Defining Site | String | ID of the monitoring site that defined the AQI | 01-003-0010 |
+| Number of Sites Reporting | Integer | Number of monitors that contributed data that day | 1 |
+
+Daily NO2 by County
+| Name | Data Type | Description | Example |
+|---|---|---|---|
+| State Code | Integer | Numeric FIPS code for the state | 1 |
+| County Code | Integer | Numeric FIPS code for the county | 73 |
+| Site Num | Integer | Monitoring site number | 23 |
+| Date Local | Date | Date of the reading | 2020-01-01 |
+| Arithmetic Mean | Float | Average NO2 concentration across all hourly readings that day | 15.75 |
+| 1st Max Value | Float | Highest 1-hour NO2 reading recorded that day | 28.26 |
+| AQI | Integer | AQI value based on the NO2 reading | 26 |
+| State Name | String | Name of the state | Alabama |
+| County Name | String | Name of the county | Jefferson |
+| City Name | String | Name of the city | Birmingham |
+| Method Name | String | Name of the measurement instrument used | Teledyne-API Model 200EUP |
+
+Daily Ozone by County
+| Name | Data Type | Description | Example |
+|---|---|---|---|
+| State Code | Integer | Numeric FIPS code for the state | 1 |
+| County Code | Integer | Numeric FIPS code for the county | 3 |
+| Site Num | Integer | Monitoring site number | 10 |
+| Date Local | Date | Date of the reading | 2020-02-29 |
+| Arithmetic Mean | Float | Average 8-hour ozone concentration for the day | 0.005 |
+| 1st Max Value | Float | Highest 8-hour average ozone reading that day | 0.005 |
+| AQI | Integer | AQI value based on the ozone reading | 23 |
+| State Name | String | Name of the state | Alabama |
+| County Name | String | Name of the county | Baldwin |
+| City Name | String | Name of the city | Fairhope |
+| Method Name | String | Name of the measurement instrument used | Instrumental - Ultra Violet Absorption |
+
+Onroad Emissions By Region and County
+| Name | Data Type | Description | Example |
+|---|---|---|---|
+| epa region code | Integer | EPA administrative region number the county belongs to | 5 |
+| state | String | Two-letter state abbreviation | IL |
+| fips state code | Float | Numeric FIPS code for the state | 17 |
+| tribal name | String | Name of tribal land if applicable, otherwise empty | NaN |
+| fips code | Integer | Full county-level FIPS code | 17003 |
+| county | String | Name of the county | Alexander |
+| data category | String | Category of emission source, ON indicates onroad mobile | ON |
+| emissions type code | String | Code describing the type of emission estimate, empty if not applicable | NaN |
+| scc | Integer | Source Classification Code identifying the specific vehicle or activity type | 2201210080 |
+| reporting period | String | Time period the emissions cover, A indicates annual | A |
+| emissions operating type | String | Indicates whether emissions are from routine operations | R |
+| pollutant code | Integer | Numeric code identifying the specific pollutant | 129000 |
+| pollutant desc | String | Name of the pollutant | Pyrene |
+| pollutant type(s) | String | Category of pollutant, HAP indicates hazardous air pollutant | HAP |
+| total emissions | Float | Total amount of the pollutant emitted in the reporting period | 0.483311 |
+| emissions uom | String | Unit of measurement for total emissions | LB |
+| data set | String | Name of the dataset this record belongs to | 2020NEI |
+
+### Uncertainty Data Dictionary
+
 
 
 
