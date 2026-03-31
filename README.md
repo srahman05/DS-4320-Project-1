@@ -76,6 +76,8 @@ The first three files came from the EPA AirData website, which publishes pre-bui
 The fourth file came from the EPA National Emissions Inventory, specifically the 2020 onroad mobile emissions summary. This file was downloaded as a ZIP containing CSVs directly from the EPA air emissions inventories page. It estimates the amount of pollutants released by vehicles on public roads, broken down by county. This includes emissions from passenger cars, trucks, motorcycles, and buses, as well as less obvious sources like idling trucks during rest stops.
 
 ### Code Table
+My data came from direct downloads, not custom code. I merged the files for each "table" and saved them as a parquet file.
+
 | File | Description | Link |
 |---|---|---|
 | `data-processing.ipynb` | Reads all raw CSV files, merges by year or region, and saves each table as a parquet file | [data-processing.ipynb](https://github.com/srahman05/DS-4320-Project-1/blob/99f5164e5597ac05e50e803e95ebe03d74d7f661/data-processing.ipynb) |
