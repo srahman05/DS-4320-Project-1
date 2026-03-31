@@ -34,25 +34,15 @@ This README contains the materials for DS 4320 Project 1, which focuses on predi
 ## Problem Definition
 ### General and Specific Problem
 * **General Problem:** The general problem is that air pollution causes serious health risks and cities often do not have enough warning before dangerous air quality conditions occur.
-* **Specific Problem:** The refined specific problem is: can we predict when a city will experience a pollution spike (a day where AQI or pollutant concentration exceeds a harmful threshold) based on recent air quality readings and weather conditions? Without reliable early warning, city officials cannot take action in time to protect residents.
+* **Specific Problem:** The refined specific problem is: can we predict when a city will experience a pollution spike (a day where AQI or pollutant concentration exceeds a harmful threshold) based on recent air quality readings? Without reliable early warning, city officials cannot take action in time to protect residents.
 ### Rationale
-The general problem of air pollution is very broad and includes policy, industrial regulation, and long-term climate trends. I narrowed the focus to predicting short-term pollution spikes because that is a problem where a data-driven model can provide direct value. Using past pollutant readings and weather data, a model can flag upcoming bad air days before they happen. This refinement makes the project realistic in scope and directly useful to city planners who need to issue warnings on short notice.
+The general problem of air pollution is very broad and includes policy, industrial regulation, and long-term climate trends. I narrowed the focus to predicting short-term pollution spikes because that is a problem where a data-driven model can provide direct value. Using past pollutant readings and data, a model can flag upcoming bad air days before they happen. This refinement makes the project realistic in scope and directly useful to city planners who need to issue warnings on short notice.
 ### Motivation
 Poor air quality is linked to respiratory illness, cardiovascular disease, and premature death. Cities that can predict bad air days in advance can take steps to protect their residents, such as issuing health advisories, restricting vehicle traffic, or alerting sensitive populations like the elderly and children. A predictive model could give city officials a one to two day window to act, which could reduce health impacts and emergency response costs.
 ### Press Release Headline and Link
 [**A New Prediction Tool Could Give Cities Early Warning Before Dangerous Air Quality Days Occur**](https://github.com/srahman05/DS-4320-Project-1/blob/97d4b235dc332a91e68d2045ded00433983f5ef7/press-release.md)
 
 ## Domain Exposition
-
-### References
-* GitHub Docs - Basic writing and formatting syntax [^1]
-* GitHub Flavored Markdown Spec [^2]
-* Markdown Creator's Blog [^3]
-
-
-[^1]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-[^2]: https://github.github.com/gfm/
-[^3]: https://daringfireball.net/projects/markdown/
 
 ### Terminology
 | Term | Definition | Why It Matters |
@@ -64,11 +54,12 @@ Poor air quality is linked to respiratory illness, cardiovascular disease, and p
 | CO (Carbon Monoxide) | A colorless gas produced by incomplete combustion | High levels indicate heavy traffic or industrial activity nearby |
 | Ozone (O3) | A gas formed when sunlight reacts with other pollutants | High ground-level ozone causes breathing problems |
 | Pollution Spike | A period when pollutant levels rise sharply above a safe threshold | The event we are trying to predict in this project |
-| Sensor Drift | Gradual loss of accuracy in a sensor over time | Important data quality issue in the UCI dataset that must be handled |
+| Hoteling Emissions | Emissions from diesel trucks idling during federally mandated rest periods | A unique onroad emission source captured in the NEI that contributes to localized air quality problems near truck stops and highways |
 
 ### Background Summary
-This project lives in the domain of environmental data science and urban public health. More specifically, it focuses on air quality monitoring and predictive modeling in city environments. Cities collect continuous readings from pollution sensors placed across neighborhoods, and this data can be combined with weather information to understand patterns in how and when pollution builds up. The goal is not just to describe past pollution events but to build a model that can flag when a spike is likely to happen.
+This project lives in the domain of environmental data science and urban public health. More specifically, it focuses on air quality monitoring and predictive modeling in county environments. Counties collect continuous readings from pollution sensors placed across neighborhoods, and this data can be combined with other pollutant information to understand patterns in how and when pollution builds up. The goal is not just to describe past pollution events but to build a model that can flag when a spike is likely to happen.
 
+### Background Readings - [Link to Readings](https://myuva-my.sharepoint.com/:f:/g/personal/yeh5kr_virginia_edu/IgClZRA5b-oZQ5cno-S_URQbATmScaFWmnnEH1m3vrc908Q?e=Y6QtKe)
 
 
 ### Code Highlighting
