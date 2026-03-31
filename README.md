@@ -80,8 +80,14 @@ The fourth file came from the EPA National Emissions Inventory, specifically the
 |---|---|---|
 | `data-processing.ipynb` | Reads all raw CSV files, merges by year or region, and saves each table as a parquet file | [data-processing.ipynb](https://github.com/srahman05/DS-4320-Project-1/blob/99f5164e5597ac05e50e803e95ebe03d74d7f661/data-processing.ipynb) |
 
+### Bias Identification
+A couple sources of bias exist in this dataset. The EPA monitoring stations are not evenly distributed across the country, meaning rural and lower-income counties are often underrepresented or missing entirely. This means the model may perform better for well-monitored urban areas than for counties with fewer or no sensors. The onroad emissions data only comes from 2020, so it does not capture changes in vehicle traffic or emissions over time, such as the drop in traffic during the COVID-19 pandemic or the increase in electric vehicles. Finally, the AQI data files (AQI, NO2, ozone) only reflects counties where monitors exist, so counties with no monitoring data are excluded from the dataset entirely.
 
+### Bias Mitigation
+To account for monitoring gaps, the percentage of US counties missing from each table will be calculated and reported. For the AQI tables (AQI, NO2, ozone), coverage can be checked by comparing the number of unique counties in the dataset against the total number of US counties (3,244). For the onroad emissions data, the same check will be done to see what share of counties have emissions records. Any county appearing in the AQI data files but not in the emissions data will be flagged as having incomplete feature data. During modeling, counties with fewer than 30 days of AQI readings in a given year will be excluded to avoid predictions based on too little data.
 
+### Rationale for Critical Decisions
+The onroad emissions data is limited to 2020 because the EPA only publishes the National Emissions Inventory every three years. Since no other free government source provides county-level vehicle emissions annually, the 2020 file is used as a consistent baseline across all years. This is a known limitation and should be considered when interpreting model results, particularly for years like 2022 and 2023 where traffic patterns had largely returned to pre-pandemic levels. Five years of AQI, NO2, and ozone data were included rather than a shorter window because air quality varies considerably by season, and a multi-year dataset gives the model enough examples of each season to learn reliable patterns. The NO2 and ozone readings were aggregated to the county level rather than kept at the individual monitor level because some monitors have missing days or data quality issues, and county-level averages produce a more stable and consistent dataset that aligns with the other three tables.
 
 
 
