@@ -93,7 +93,7 @@ The onroad emissions data is limited to 2020 because the EPA only publishes the 
 
 ## Metadata
 ### Schema
-
+![ER diagram](https://github.com/srahman05/DS-4320-Project-1/blob/2566344b74a00959384ad47c3bec498ad5901392/er-diagram.jpeg)
 
 ### Data Table
 | Table Name | Description | Link |
