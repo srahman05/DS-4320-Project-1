@@ -24,7 +24,7 @@ This README contains the materials for DS 4320 Project 1, which focuses on predi
 ## Problem Definition
 ### General and Specific Problem
 * **General Problem:** The general problem is that air pollution causes serious health risks and cities often do not have enough warning before dangerous air quality conditions occur.
-* **Specific Problem:** The refined specific problem is: can we predict when a city will experience a pollution spike (a day where AQI or pollutant concentration exceeds a harmful threshold) based on recent air quality readings? Without reliable early warning, city officials cannot take action in time to protect residents.
+* **Specific Problem:** Can we predict when a city will experience a pollution spike (a day where AQI or pollutant concentration exceeds a harmful threshold) based on recent air quality readings? Without reliable early warning, city officials cannot take action in time to protect residents.
 ### Rationale
 The general problem of air pollution is very broad and includes policy, industrial regulation, and long-term climate trends. I narrowed the focus to predicting short-term pollution spikes because that is a problem where a data-driven model can provide direct value. Using past pollutant readings and data, a model can flag upcoming bad air days before they happen. This refinement makes the project realistic in scope and directly useful to city planners who need to issue warnings on short notice.
 ### Motivation
