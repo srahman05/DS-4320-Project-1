@@ -16,7 +16,7 @@ This README contains the materials for DS 4320 Project 1, which focuses on predi
 | Pipeline | [analysis code](https://doi.org/10.1000/182) |
 | License | [MIT](https://github.com/srahman05/DS-4320-Project-1/blob/cc5a4a19480b9613e8bbe429a9660bba0b6087cd/LICENSE) |
 
----
+
 <br>
 
 <br>
