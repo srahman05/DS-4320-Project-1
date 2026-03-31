@@ -11,9 +11,9 @@ This README contains the materials for DS 4320 Project 1, which focuses on predi
 | Name | Sharini Rahman |
 | NetID | yeh5kr |
 | DOI | [Link](https://doi.org/10.5281/zenodo.19343154) |
-| Press Release | [Link](https://github.com/srahman05/DS-4320-Project-1/blob/85918e00bd939466be5c7aebd4f7874fc76e0bf6/press-release.md) |
-| Data | [Link](https://myuva-my.sharepoint.com/:f:/g/personal/yeh5kr_virginia_edu/IgBRa3z0DhIIT7WJeHvw6uEUAaD6VxoHnCiSf18yM_InRrI?e=GZw09j) |
-| Pipeline | [analysis code](https://doi.org/10.1000/182) |
+| Press Release | [Link to Press Release](https://github.com/srahman05/DS-4320-Project-1/blob/4c904b47df53f4259f2b75460241f5aa520fb8b7/press-release.md) |
+| Data | [Link to Data](https://myuva-my.sharepoint.com/:f:/g/personal/yeh5kr_virginia_edu/IgBRa3z0DhIIT7WJeHvw6uEUAaD6VxoHnCiSf18yM_InRrI?e=GZw09j) |
+| Pipeline | [Link to Pipeline Analysis](https://doi.org/10.1000/182) |
 | License | [MIT](https://github.com/srahman05/DS-4320-Project-1/blob/cc5a4a19480b9613e8bbe429a9660bba0b6087cd/LICENSE) |
 
 
