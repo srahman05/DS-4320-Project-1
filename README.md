@@ -10,7 +10,7 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 
 ### Name - Sharini Rahman 
 ### NetID - yeh5kr
-### DOI - [Link to DOI](https://doi.org/10.1000/182)
+### DOI - [Link to DOI](https://doi.org/10.5281/zenodo.19343154)
 ### Press Release - [Link to Press Release](https://github.com/srahman05/DS-4320-Project-1/blob/97d4b235dc332a91e68d2045ded00433983f5ef7/press-release.md)
 ### Data - [Link to Data](https://doi.org/10.1000/182)
 ### Pipeline - [Analysis Code](https://doi.org/10.1000/182)
