@@ -55,16 +55,19 @@ Poor air quality is linked to respiratory illness, cardiovascular disease, and p
 [^3]: https://daringfireball.net/projects/markdown/
 
 ### Terminology
-| Term | appearance | code |
-|:------|:------------:|---:|
-|Superscript | 2<sup>nd</sup>| `<sup>nd</sup>`|
-|Subscript | 2<sub>nd</sub>| `<sub>nd</sub>`|
-|Inline code| `import numpy as np`| \` \` |
-|Table justification | use colons in table header row | `:---` or `:---:` or `---:`|
+| Term | Definition | Why It Matters |
+|---|---|---|
+| AQI (Air Quality Index) | A standardized scale that measures how polluted the air is and what health effects may be a concern | The main metric used to communicate air quality risk to the public |
+| PM2.5 | Fine particulate matter smaller than 2.5 micrometers | One of the most dangerous pollutants; penetrates deep into the lungs |
+| PM10 | Coarser particulate matter smaller than 10 micrometers | Linked to respiratory problems; tracked in most city monitoring systems |
+| NO2 (Nitrogen Dioxide) | A gas produced mainly by vehicle emissions and industrial activity | A key pollutant in urban areas; used to track traffic-related pollution |
+| CO (Carbon Monoxide) | A colorless gas produced by incomplete combustion | High levels indicate heavy traffic or industrial activity nearby |
+| Ozone (O3) | A gas formed when sunlight reacts with other pollutants | High ground-level ozone causes breathing problems |
+| Pollution Spike | A period when pollutant levels rise sharply above a safe threshold | The event we are trying to predict in this project |
+| Sensor Drift | Gradual loss of accuracy in a sensor over time | Important data quality issue in the UCI dataset that must be handled |
 
 ### Background Summary
-> [!TIP]
-> Did you know you can make these call outs
+This project lives in the domain of environmental data science and urban public health. More specifically, it focuses on air quality monitoring and predictive modeling in city environments. Cities collect continuous readings from pollution sensors placed across neighborhoods, and this data can be combined with weather information to understand patterns in how and when pollution builds up. The goal is not just to describe past pollution events but to build a model that can flag when a spike is likely to happen.
 
 
 
