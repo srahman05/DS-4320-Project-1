@@ -75,6 +75,12 @@ All data used in this project came from free, publicly available government webs
 The first three files came from the EPA AirData website, which publishes pre-built daily summary files that anyone can download by pollutant and year. The Daily AQI by County file was downloaded for 2020 through 2025 and provides one composite air quality score per county per day. This will serve as the target variable for the prediction model. The Daily NO2 and Daily Ozone summary files were also downloaded for the same time period and provide pollutant-specific readings collected from EPA monitoring stations across the country. All three of these files cover US counties nationwide.
 The fourth file came from the EPA National Emissions Inventory, specifically the 2020 onroad mobile emissions summary. This file was downloaded as a ZIP containing CSVs directly from the EPA air emissions inventories page. It estimates the amount of pollutants released by vehicles on public roads, broken down by county. This includes emissions from passenger cars, trucks, motorcycles, and buses, as well as less obvious sources like idling trucks during rest stops.
 
+### Code Table
+## Code
+
+| File | Description | Link |
+|---|---|---|
+| `data-processing.ipynb` | Reads all raw CSV files, merges by year or region, and saves each table as a parquet file | [data-processing.ipynb](pipeline/pipeline.ipynb) |
 
 
 
