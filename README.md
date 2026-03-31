@@ -20,9 +20,9 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 |---|---|
 | Name | Peter Alonzi |
 | NetID | lpa2a |
-| DOI | [https://doi.org/10.1000/182](https://doi.org/10.1000/182) |
-| Press Release | [Data Science Project uses GFM to meet spec](https://github.com/UVADS/DS-4320/tree/main) |
-| Data | [link to data](https://doi.org/10.1000/182) |
+| DOI | [https://doi.org/10.1000/182](https://doi.org/10.5281/zenodo.19343154) |
+| Press Release | [Link](https://github.com/srahman05/DS-4320-Project-1/blob/97d4b235dc332a91e68d2045ded00433983f5ef7/press-release.md) |
+| Data | [Link](https://myuva-my.sharepoint.com/:f:/g/personal/yeh5kr_virginia_edu/IgBRa3z0DhIIT7WJeHvw6uEUAaD6VxoHnCiSf18yM_InRrI?e=GZw09j)) |
 | Pipeline | [analysis code](https://doi.org/10.1000/182) |
 | License | [MIT](LICENSE.md) |
 
