@@ -1,4 +1,4 @@
-# DS 4320 Project 1: Predicting Air Quality 
+# DS 4320 Project 1: Predicting Air Quality for Government Alert Allocation
 ### Executive Summary
 This README now documents a GFM-focused DS 4320 project and includes completed project metadata (name, NetID, DOI, links, and license) plus a summary table for quick reference. It also contains a defined problem statement, rationale, references with footnotes, a terminology table, callout examples, and code highlighting examples to demonstrate practical GitHub Flavored Markdown usage.
 
